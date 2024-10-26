@@ -27,17 +27,17 @@ export const Hero = (props: HeaderProps) => {
   } as Props;
   return (
     <section className=" flex flex-col">
-      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8 min-h-screen ">
-      <motion.div className=" lg:col-span-3 z-[8] flex flex-col min-h-screen justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8 min-h-screen h-auto ">
+      <motion.div className=" lg:col-span-3 z-[8] flex flex-col h-auto justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 0.3, stiffness: 60 }}
-          className="h-fit relative text-left text-white mb-2 md:mb-6 tracking-tight md:leading-normal leading-tight text-5xl md:text-7xl font-bold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
+          className="max-h-screen h-fit relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight  text-5xl md:text-6xl lg:text-7xl font-semibold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
         >
           <h1>{heading}</h1>
          
-          <h1 className=" text-transparent bg-clip-text  bg-gradient-to-tr from-secundary to-secundary ">{heading1}</h1>
+          <h1 className=" text-transparent bg-clip-text  bg-gradient-to-tr from-secundary to-secundary py-2">{heading1}</h1>
          
           <h1>{heading2}</h1>
 
@@ -74,10 +74,10 @@ export const Hero = (props: HeaderProps) => {
         </div>
       </motion.div>
      
-      <motion.div className= "z-[7] max-h-screen">    
+      <motion.div className="z-[7] h-fit">    
      <Solar />
     </motion.div>
-  </div>
+      </div>
 
   </section>
   
