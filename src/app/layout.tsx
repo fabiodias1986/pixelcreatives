@@ -99,7 +99,10 @@ export default function RootLayout({
       <link rel="icon" href="@/favicon180.png" sizes="any" />
       <link rel="icon" href="@/favicon32.png" sizes="32x32" type="image/png" />
       <link rel="icon" href="@/favicon16.png" sizes="16x16" type="image/png" />    
-      <Script
+      
+    
+    </Head>
+    <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-QPSGE6KKYY"
       />
@@ -111,8 +114,6 @@ export default function RootLayout({
           gtag('config', 'G-QPSGE6KKYY');
         `}
       </Script>
-    
-    </Head>
       <body className={poppins.className}>
         <div className=" bg-gradient-to-r from-main to-main">
         < Nav />

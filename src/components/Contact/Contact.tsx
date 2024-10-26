@@ -1,34 +1,21 @@
 import type { ButtonProps } from "@relume_io/relume-ui";
 import ContactForm from "@/components/ContactForm/ContactForm"
+import Image from 'next/image';
 
-type ImageProps = {
-  src: string;
-  alt?: string;
-};
 
-type Props = {
-  heading: string;
-  description: string;
-  buttons: ButtonProps[];
-  image: ImageProps;
-};
-
-export type ContactProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
-
-export const Contact = (props:ContactProps) => {
-  const { heading, description, buttons, image } = {
-    ...ContactDefaults,
-    ...props,
-  } as Props;
+export const Contact = () => {
   return (
     <section
       id="relume"
       className="w-full  lg:h-screen  grid grid-cols-1 items-center  lg:grid-cols-2 lg:pt-0"
     >
       <div className="md:block h-full w-full bg-transparent">
-        <img
-          src={image.src}
-          alt={image.alt}
+        <Image
+          src="/assets/images/contact.jpeg"
+          alt="contactos image"
+          width={1000}
+          height={1000}
+          
           className="w-full h-full object-cover lg:min-h-screen "
         />
       </div>
@@ -39,15 +26,4 @@ export const Contact = (props:ContactProps) => {
       </div>
     </section>
   );
-};
-
-export const ContactDefaults:ContactProps = {
-  heading: "",
-  description:
-    "",
-  buttons: [{ title: "Button" }, { title: "Button", variant: "secondary" }],
-  image: {
-    src: "/assets/images/contact.jpeg",
-    alt: "image",
-  },
 };

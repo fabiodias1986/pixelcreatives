@@ -3,7 +3,7 @@ import { useEffect, useState, useRef, useCallback } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaHome, FaUsers, FaServicestack, FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa'; // Import all icons here
-
+import Image from 'next/image'
 
 const links = [
   { name: 'Início', href: '/', icon: <FaHome /> },
@@ -54,7 +54,7 @@ const Nav = () => {
       >
         <div className="px-4 md:w-1/3 w-full">
         <Link href="/">
-          <img src="/assets/logos/logo-white.png" alt="Logo" className="h-fit w-auto object-cover object-center" />
+          <Image src="/assets/logos/logo-white.png" alt="Logo" className="h-fit w-auto object-cover object-center" width={300} height={100} />
         </Link>
         </div>
 

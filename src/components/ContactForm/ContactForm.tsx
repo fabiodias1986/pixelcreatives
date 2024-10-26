@@ -14,9 +14,10 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+
   if (!isOpen) return null;
-    const [modalOpen, setModalOpen] = useState(false)
-    const [modalMessage, setModalMessage] = useState('')
 
   return (
     <div className="fixed z-[900000000] top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
