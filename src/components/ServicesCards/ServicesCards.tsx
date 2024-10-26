@@ -64,7 +64,7 @@ function ServiceCard({ title, description }: ServiceCardProps) {
 
 export default function ServicesCards() {
   return (
-    <section className="min-h-screen lg:mt-16">
+    <section className="min-h-screen mt-8 lg:mt-16">
       <div className="container mx-auto p-6 flex flex-col justify-center items-center">
         <h1 className="text-5xl md:text-7xl font-semibold text-white mb-6 lg:mb-16">
           Nossos Serviços

@@ -13,8 +13,8 @@ const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{I
         left: '80%',
         top: '30%',
         x: `-50%`,
-        y: `-51%`,
-        boxShadow: "0px 0px 40px #00ffbf",
+        y: `-52%`,
+        boxShadow: "0px 0px 30px #00ffbf",
       }}
       animate={{
         rotate: reverseOrbit ? -360 : 360
@@ -33,7 +33,7 @@ const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{I
           left: '100%',
           top: '50%',
           x: `-50%`,
-          y: `-50%`,
+          y: `-52%`,
           boxShadow: `0 0 ${size / 2}px #00ffbf`,
         }}
       >

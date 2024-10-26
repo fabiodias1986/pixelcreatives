@@ -23,7 +23,7 @@ type ImageProps = {
       <section className=" min-h-screen flex flex-col  p-6 md:p-16 lg:my-16">
        
         <div className="">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-start lg:gap-x-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-x-20">
             <div className="h-fit ">
               <motion.h1
               whileInView={{opacity:1, x:0}}
@@ -52,7 +52,7 @@ type ImageProps = {
   };
   
   export const IntroDefaults: IntroProps = {
-    heading: "O Caminho para o Sucesso!",
+    heading: "Impulsione o seu Negócio!",
     children: (
       <div>
         <p className="mb-2 leading-2">
