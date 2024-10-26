@@ -37,7 +37,6 @@ interface ServiceCardProps {
 }
 
 
-// Create a separate component for each service card
 function ServiceCard({ title, description }: ServiceCardProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
