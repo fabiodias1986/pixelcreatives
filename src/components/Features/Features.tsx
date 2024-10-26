@@ -72,7 +72,7 @@ export default function Features() {
   return (
     <motion.section 
       ref={ref}
-      className="min-h-screen bg-white flex flex-col p-6 md:p-16 lg:py-24 items-center justify-center"
+      className="min-h-screen bg-white flex flex-col p-6 py-16 md:p-16 lg:py-24 items-center justify-center"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.5 }}

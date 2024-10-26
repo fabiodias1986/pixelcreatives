@@ -30,7 +30,7 @@ import {
       ...props,
     } as Props;
     return (
-      <section className="bg-main px-[5%] py-16 md:py-24 lg:py-28 flex justify-center items-center">
+      <section className="bg-main px-6 py-16 md:py-24 lg:py-28 flex justify-center items-center">
         <div className="  container lg:max-w-[60%] flex flex-col justify-center items-center ">
           <div className=" mb-12 text-center md:mb-18 lg:mb-20 ">
             <h2 className="text-white mb-5 text-5xl font-semibold md:mb-6 md:text-7xl ">{heading}</h2>
