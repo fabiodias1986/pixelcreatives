@@ -175,10 +175,13 @@ export default function PropostaForm() {
         transition={{ duration: 0.5 }}
         className="mt-[100px] w-full  space-y-8  max-w-3xl bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md"
       >
-        
-        <h2 className="text-center text-4xl font-bold text-gray-900 mb-6 lg:mb-10">
+
+        <div className="p-6 text-center mb-8 lg:mb-12">
+        <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-900 mb-2">
           Solicitar uma Proposta
         </h2>
+        <p className="text-gray-800">Insira os dados para lhe enviarmos uma proposta consoante os seus objectivos </p>
+        </div>
         <form onSubmit={handleSubmit} className="space-y-8">
           {sections.map((section, index) => (
             <motion.div

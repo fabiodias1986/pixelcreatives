@@ -30,16 +30,16 @@ import {
       ...props,
     } as Props;
     return (
-      <section className="bg-main px-[5%] py-16 md:py-24 lg:py-28 flex justify-center items-center ">
+      <section className="bg-main px-[5%] py-16 md:py-24 lg:py-28 flex justify-center items-center">
         <div className="  container lg:max-w-[60%] flex flex-col justify-center items-center ">
           <div className=" mb-12 text-center md:mb-18 lg:mb-20 ">
             <h2 className="text-white mb-5 text-5xl font-semibold md:mb-6 md:text-7xl ">{heading}</h2>
             <p className="md:text-md text-white">{description}</p>
           </div>
-          <Accordion type="multiple" className=" w-full ">
+          <Accordion type="multiple" className=" w-auto ">
             {questions.map((question, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="  transition mt-2 ">
-                <AccordionTrigger className=" text-white lg:text-xl lg:tracking-wide mr-5  md:py-5 font-normal pl-8  transition-all duration-100 text-left">{question.title}</AccordionTrigger>
+              <AccordionItem key={index} value={`item-${index}`} className="  transition ">
+                <AccordionTrigger className=" text-white text-lg lg:text-lg lg:tracking-wide mr-5  md:py-5 font-normal pl-8  transition-all duration-100 text-left">{question.title}</AccordionTrigger>
                 <AccordionContent className=" p-4 md:pb-6 pl-8 text-gray-200 font-light ">{question.answer}</AccordionContent>
               </AccordionItem>
             ))}

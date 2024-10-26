@@ -46,7 +46,7 @@ export const Hero = (props: HeaderProps) => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring", duration: 0.5, stiffness: 80 }}
-          className=" text-slate-100 text-left font-light md:text-xl md:tracking-wide w-full md:span-col-1 z-[9] mb-6"
+          className=" text-slate-100 text-left font-light md:text-lg md:tracking-wide w-full md:span-col-1 z-[9] mb-6"
         >
           {description}
         </motion.p>

@@ -30,7 +30,7 @@ type ImageProps = {
               initial={{ opacity: 0, x:-50 }}
               transition={{duration:0.4, once:true}}
               viewport={{ once: true }}
-               className="pb-4 font-semibold text-white mb-12 text-6xl md:text-7xl drop-shadow-md">{heading}</motion.h1>
+               className="pb-4 font-semibold text-white mb-12 text-5xl md:text-7xl drop-shadow-md">{heading}</motion.h1>
               <motion.div 
                 initial={{ opacity: 0, y:50 }}
                 whileInView={{opacity:1, y:0}}
