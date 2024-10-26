@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaUsers, FaServicestack, FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa'; // Import all icons here
+import { FaHome, FaUsers, FaServicestack,FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaMapMarkerAlt } from 'react-icons/fa'; // Import all icons here
 import Image from 'next/image'
 
 const menuItems = [
@@ -19,9 +19,15 @@ const socialMediaLinks = [
 const Footer = () => {
   return (
     <div className="relative font-light grid grid-cols-1 md:grid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
-      <div className="flex-col text-normal h-full w-fit justify-center md:justify-start items-start p-8">
+      <div className="text-lg flex-col text-normal h-full w-fit justify-center md:justify-start items-start p-8">
         <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className="h-fit w-auto object-cover object-center" />
-        <p className="mt-4 flex items-center justify-center md:justify-start ">
+        <p className="mt-4 flex items-center justify-center md:justify-start">
+          <FaEnvelope className="mr-2" />
+          <a href="mailto:pixelcreatives.pt@gmail.com" className="hover:text-secundary transition-colors duration-200">
+            pixelcreatives.pt@gmail.com
+          </a>
+        </p>
+        <p className="mt-2 flex items-center justify-center md:justify-start ">
           <FaPhoneAlt className="mr-2" />
           <a href="tel:+351910908608" className="hover:text-secundary transition-colors duration-200">
             +351 910 908 608
