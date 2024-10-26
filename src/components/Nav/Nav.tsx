@@ -96,9 +96,9 @@ const Nav = () => {
             transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
             className="flex flex-col gap-6 bg-gradient-to-l from-main via-main2 to-main fixed z-50 top-0 left-0 w-screen h-screen items-center justify-center"
           >
-            <div  className="flex flex-col gap-6 w-auto items-center justify-center ">
+            <div  className="flex flex-col gap-4 lg:gap-6 w-auto items-center justify-center ">
 
-            <motion.ul className="space-y-6 w-fit h-auto">
+            <motion.ul className="space-y-5 lg:space-y-6 w-fit h-auto">
               {links.map((link, index) => (
                 <motion.li
                   key={index}

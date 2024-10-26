@@ -26,9 +26,9 @@ export const Hero = (props: HeaderProps) => {
     ...props,
   } as Props;
   return (
-    <section className=" flex flex-col">
-      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8 min-h-screen h-auto ">
-      <motion.div className=" lg:col-span-3 z-[8] flex flex-col h-auto justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
+    <section className=" flex flex-col items-start justify-center min-h-screen">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8  ">
+      <motion.div className=" h-full lg:col-span-3 z-[8] flex flex-col justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export const Hero = (props: HeaderProps) => {
         </div>
       </motion.div>
      
-      <motion.div className="z-[7] h-fit">    
+      <motion.div className="z-[7] h-auto">    
      <Solar />
     </motion.div>
       </div>
