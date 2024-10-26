@@ -74,7 +74,7 @@ export const Hero = (props: HeaderProps) => {
         </div>
       </motion.div>
      
-      <motion.div className= "z-[7] flex-grow-3 ">    
+      <motion.div className= "z-[7] max-h-screen">    
      <Solar />
     </motion.div>
   </div>

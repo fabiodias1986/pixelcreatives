@@ -38,8 +38,8 @@ import {
           </div>
           <Accordion type="multiple" className=" w-full">
             {questions.map((question, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="  transition ">
-                <AccordionTrigger className=" text-white lg:text-xl lg:tracking-wide mr-5 text-md md:py-5 font-normal pl-8  transition-all duration-100 text-left">{question.title}</AccordionTrigger>
+              <AccordionItem key={index} value={`item-${index}`} className="  transition mt-4">
+                <AccordionTrigger className=" text-white lg:text-xl lg:tracking-wide mr-5  md:py-5 font-normal pl-8  transition-all duration-100 text-left">{question.title}</AccordionTrigger>
                 <AccordionContent className=" p-4 md:pb-6 pl-8 text-gray-100 font-light ">{question.answer}</AccordionContent>
               </AccordionItem>
             ))}
