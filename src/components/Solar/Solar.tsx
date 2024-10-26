@@ -71,8 +71,8 @@ export default function Solar() {
        <SocialIconWithOrbit Icon={FaFacebook} size={16} orbitRadius={100} speed={2} />
         <SocialIconWithOrbit Icon={FaTwitter} size={14} orbitRadius={150} speed={2.5} reverseOrbit={true} />
         <SocialIconWithOrbit Icon={FaInstagram} size={16} orbitRadius={250} speed={1} />
-        <SocialIconWithOrbit Icon={FaLinkedin} size={15} orbitRadius={350} speed={3} reverseOrbit={true} />
-        <SocialIconWithOrbit Icon={FaGoogle} size={18} orbitRadius={430} speed={4} />   
+        <SocialIconWithOrbit Icon={FaLinkedin} size={15} orbitRadius={320} speed={3} reverseOrbit={true} />
+        <SocialIconWithOrbit Icon={FaGoogle} size={18} orbitRadius={400} speed={4} />   
     </div>
     </div>
   )
