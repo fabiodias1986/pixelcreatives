@@ -118,8 +118,9 @@ const Nav = () => {
                 </motion.li>
               ))}
             </motion.ul>
-            <Link href="/proposta" className="w-full ">
-              <motion.button 
+            <Link href="/proposta"   className="w-full ">
+              <motion.button
+                onClick={() => setIsOpen(false)}
                 className="lg:hidden mt-6 px-6 py-3 bg-black w-full md:text-xl text-white border-solid border-2 border-white rounded-xl hover:bg-secundary hover:text-main transition-colors duration-300"
               >            
                 Solicitar Proposta
