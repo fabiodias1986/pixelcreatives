@@ -73,10 +73,9 @@ export const Hero = (props: HeaderProps) => {
           </Link>
         </div>
       </motion.div>
-     
-      <motion.div className="z-[7] h-auto bg-blue-400">    
+    
      <Solar />
-    </motion.div>
+    
       </div>
 
   </section>
