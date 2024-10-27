@@ -79,7 +79,7 @@ export default function Features() {
     >
       
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold text-left md:text-center  text-main mb-8 lg:mb-16"
+          className="text-5xl md:text-7xl font-bold text-center  text-main mb-8 lg:mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
           transition={{ duration: 0.5, delay: 0.2 }}

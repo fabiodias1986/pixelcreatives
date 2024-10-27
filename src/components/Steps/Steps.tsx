@@ -42,8 +42,8 @@ export const Steps = (props: StepsProps) => {
             whileInView={{opacity:1, y:0}}
             initial={{ opacity: 0, y:50 }}
             transition={{duration:0.5}}
-          className="relative top-0 z-10 md:sticky md:top-20 md:z-auto md:pr-4 mb-4">
-            <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
+          className="relative top-0 z-10 md:sticky md:top-20 md:z-auto md:pr-4 mb-4 text-center md:text-left">
+            <p className="mb-3 font-semibold md:mb-4 text-gray-500">{tagline}</p>
             <h1 className=" drop-shadow-2xl text-white mb-5 text-5xl font-semibold md:mb-6 md:text-5xl lg:text-7xl">{heading}</h1>
             <p className=" text-gray-100 md:text-md">{description}</p>
           </motion.div>

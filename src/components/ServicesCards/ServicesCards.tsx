@@ -65,7 +65,7 @@ export default function ServicesCards() {
   return (
     <section className="min-h-screen mt-16">
       <div className="container mx-auto p-6 flex flex-col justify-center items-center">
-        <h1 className="text-5xl md:text-7xl font-semibold text-white mb-8 lg:mb-16">
+        <h1 className="text-center text-5xl md:text-7xl font-semibold text-white mb-8 lg:mb-16">
           Serviços
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
