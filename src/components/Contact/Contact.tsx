@@ -7,7 +7,7 @@ export const Contact = () => {
   return (
     <section
       id="relume"
-      className="w-full  lg:h-screen  grid grid-cols-1 items-center  lg:grid-cols-2 lg:pt-0"
+      className="w-full  lg:min-h-screen  grid grid-cols-1 items-center  lg:grid-cols-2 lg:pt-0"
     >
       <div className="md:block h-full w-full bg-transparent">
         <Image
