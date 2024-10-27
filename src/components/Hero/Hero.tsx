@@ -19,6 +19,7 @@ type Props = {
 };
 
 export type HeaderProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
+
 export const Hero = (props: HeaderProps) => {
   const { heading, heading1, heading2, description, buttons, image } = {
     ...HeaderDefaults,
@@ -26,14 +27,14 @@ export const Hero = (props: HeaderProps) => {
   } as Props;
 
   return (
-    <section className="flex flex-col items-start justify-between min-h-screen w-full">
-      <div className="flex flex-col items-center justify-center w-full h-full"> 
+    <section className="flex flex-col items-center justify-center min-h-screen w-full">
+      <div className="flex flex-col items-start justify-center w-full h-full"> 
         <motion.div className="h-auto z-[8] flex flex-col justify-center items-start p-6 md:p-16">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 0.3, stiffness: 60 }}
-            className="relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight text-5xl md:text-6xl lg:text-7xl font-semibold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
+            className="relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight text-5xl md:text-6xl lg:text-7xl font-bold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
           >
             <h1>{heading}</h1>
             <h1 className="text-transparent bg-clip-text bg-gradient-to-tr from-secundary to-secundary py-2">{heading1}</h1>
@@ -76,4 +77,17 @@ export const Hero = (props: HeaderProps) => {
       </div>
     </section>
   );
+};
+
+export const HeaderDefaults: HeaderProps = {
+  heading: "Soluções de ",
+  heading1:"Marketing Digital ",
+  heading2: "e WebDesign!",
+  description:
+    "Transforme cliques em clientes com estratégias digitais eficazes.",
+  buttons: [{ title: "Button" }, { title: "Button", variant: "secondary" }],
+  image: {
+    src: "/assets/images/hero.svg",
+    alt: "Digital Marketing",
+  },
 };
