@@ -54,7 +54,7 @@ export default function Gallery() {
 
   return (
     <div className="py-16 lg:py-24 flex flex-col items-center justify-center overflow-hidden w-full ">
-      <h1 className="p-6 text-5xl md:text-7xl  font-semibold text-white mb-6 md:text-center">Explore a criatividade</h1>
+      <h1 className="p-6 text-5xl md:text-7xl  font-semibold text-white mb-6 text-center">Explore a criatividade</h1>
       <motion.div 
         ref={carousel}
         className="cursor-grab overflow-hidden w-full "
