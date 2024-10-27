@@ -18,24 +18,24 @@ const socialMediaLinks = [
 
 const Footer = () => {
   return (
-    <div className="relative font-light grid grid-cols-1 md:grid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
-      <div className="text-lg flex-col text-normal h-full w-fit justify-center md:justify-start items-center p-8">
-        <div className="mt-2 flex items-center justify-center md:justify-start ">
-        <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className=" h-fit w-auto object-cover" />
+    <div className="relative font-light grid grid-cols-1 lgrid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
+      <div className=" md:text-lg flex-col text-normal h-full w-fit justify-center lg:justify-start items-center p-8">
+        <div className=" mt-2 flex items-center justify-center lg:justify-start ">
+        <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className=" h-fit w-auto object-contain" />
         </div>
-        <p className="mt-4 flex items-center justify-center md:justify-start">
+        <p className="mt-4 flex items-center justify-center lg:justify-start">
           <FaEnvelope className="mr-2" />
           <a href="mailto:pixelcreatives.pt@gmail.com" className="hover:text-secundary transition-colors duration-200">
             pixelcreatives.pt@gmail.com
           </a>
         </p>
-        <p className="mt-2 flex items-center justify-center md:justify-start ">
+        <p className="mt-2 flex items-center justify-center :justify-start ">
           <FaPhoneAlt className="mr-2" />
-          <a href="tel:+351910908608" className="hover:text-secundary transition-colors duration-200">
+          <a href="tel:+351910908608" className="hover:text-lgsecundary transition-colors duration-200">
             +351 910 908 608
           </a>
         </p> 
-        <p className="mt-2 flex items-center justify-center md:justify-start">
+        <p className="mt-2 flex items-center justify-center lg:justify-start">
           <FaMapMarkerAlt className="mr-2" /> 
           Loulé, Portugal
         </p> 
@@ -53,7 +53,7 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <div className="flex-col text-normal font-light place-items-center p-8">
+      <div className=" flex-col text-normal font-light place-items-center p-8">
         <h3 className="w-full mb-4 text-xl font-semibold text-left">Siga-nos</h3>
         <ul className="text-lg grid gap-y-2 w-fit place-items-start">
           {socialMediaLinks.map(({ name, href, icon }) => (
