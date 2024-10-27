@@ -10,7 +10,7 @@ const menuItems = [
 ];
 
 const socialMediaLinks = [
-  { name: 'Facebook', href: 'https://www.facebook.com/', icon: <FaFacebook /> },
+  { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61568119252052', icon: <FaFacebook /> },
   { name: 'Instagram', href: 'https://www.instagram.com/pixelcreatives.pt', icon: <FaInstagram /> },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/pixel-creatives-pixel-creatives-b06a43334', icon: <FaLinkedin /> },
   { name: 'Tiktok', href: 'https://www.tiktok.com/@pixelcreatives.pt', icon: <FaTiktok /> },
