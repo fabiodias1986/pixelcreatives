@@ -18,7 +18,7 @@ const socialMediaLinks = [
 
 const Footer = () => {
   return (
-    <div className="relative font-light grid grid-cols-1 lgrid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
+    <div className="relative font-light grid grid-cols-1 lg:grid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
       <div className=" md:text-lg flex-col text-normal h-full w-fit justify-center lg:justify-start items-center p-8">
         <div className=" mt-2 flex items-center justify-center lg:justify-start ">
         <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className=" h-fit w-auto object-contain" />
@@ -29,9 +29,9 @@ const Footer = () => {
             pixelcreatives.pt@gmail.com
           </a>
         </p>
-        <p className="mt-2 flex items-center justify-center :justify-start ">
+        <p className="mt-2 flex items-center justify-center lg:justify-start ">
           <FaPhoneAlt className="mr-2" />
-          <a href="tel:+351910908608" className="hover:text-lgsecundary transition-colors duration-200">
+          <a href="tel:+351910908608" className="hover:text-secundary transition-colors duration-200">
             +351 910 908 608
           </a>
         </p> 
