@@ -26,14 +26,14 @@ export const Hero = (props: HeaderProps) => {
     ...props,
   } as Props;
   return (
-    <section className=" flex flex-col items-start justify-center min-h-screen">
-      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8  ">
-      <motion.div className=" h-full lg:col-span-3 z-[8] flex flex-col justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
+    <section className=" flex flex-col items-start justify-center min-h-screen w-full">
+      <div className="flex items-center justify-center h-screen"> 
+        <motion.div className=" h-auto lg:col-span-3 z-[8] flex flex-col justify-center items-start  col-span-1 md:col-span-2 p-6 md:p-16">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 0.3, stiffness: 60 }}
-          className="max-h-screen h-fit relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight  text-5xl md:text-6xl lg:text-7xl font-semibold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
+          className="h-full relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight  text-5xl md:text-6xl lg:text-7xl font-semibold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
         >
           <h1>{heading}</h1>
          
@@ -73,9 +73,10 @@ export const Hero = (props: HeaderProps) => {
           </Link>
         </div>
       </motion.div>
-    
+     
+      <motion.div className="z-[7] h-auto ">    
      <Solar />
-    
+    </motion.div>
       </div>
 
   </section>

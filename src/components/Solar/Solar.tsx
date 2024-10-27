@@ -6,14 +6,14 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGoogle } from 'react-
 const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{Icon: React.ElementType, size:number, orbitRadius:number, speed:number, reverseOrbit?: boolean}) => {
   return (
     <motion.div
-      className="absolute rounded-full border border-[#00ffbf] mix-blend-overlay"
+      className="absolute mt-0 rounded-full border border-[#00ffbf] mix-blend-overlay"
       style={{
         width: orbitRadius * 2,
         height: orbitRadius * 2,
         left: '80%',
         top: '30%',
         x: `-50%`,
-        y: `-52%`,
+        y: `-50%`,
         boxShadow: "0px 0px 30px #00ffbf",
       }}
       animate={{
@@ -33,7 +33,7 @@ const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{I
           left: '100%',
           top: '50%',
           x: `-50%`,
-          y: `-52%`,
+          y: `50%`,
           boxShadow: `0 0 ${size / 2}px #00ffbf`,
         }}
       >
@@ -45,10 +45,10 @@ const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{I
 
 export default function Solar() {
   return (
-    <div className="absolute z-20 inset-0 bg-transparent h-auto overflow-hidden">
-      <div className="relative w-full h-auto">
+    <div className="absolute z-20 inset-0 h-auto overflow-hidden bottom-0">
+      <div className="relative w-full h-auto" style={{ height: '100vh' }}> {/* Set a height for the parent */}
         <motion.div
-          className="absolute rounded-full z-25 top-0 left-0 "
+          className="absolute rounded-full z-25"
           style={{
             width: 60,
             height: 60,
@@ -68,12 +68,12 @@ export default function Solar() {
             ease: "easeInOut",
           }}
         />
-       <SocialIconWithOrbit Icon={FaFacebook} size={16} orbitRadius={100} speed={2} />
+        <SocialIconWithOrbit Icon={FaFacebook} size={16} orbitRadius={100} speed={2} />
         <SocialIconWithOrbit Icon={FaTwitter} size={14} orbitRadius={150} speed={2.5} reverseOrbit={true} />
         <SocialIconWithOrbit Icon={FaInstagram} size={16} orbitRadius={250} speed={1} />
         <SocialIconWithOrbit Icon={FaLinkedin} size={15} orbitRadius={320} speed={3} reverseOrbit={true} />
-        <SocialIconWithOrbit Icon={FaGoogle} size={18} orbitRadius={400} speed={4} />   
-    </div>
+        <SocialIconWithOrbit Icon={FaGoogle} size={18} orbitRadius={400} speed={4} />
+      </div>
     </div>
   )
 }
