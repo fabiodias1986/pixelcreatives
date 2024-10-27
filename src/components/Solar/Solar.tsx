@@ -45,7 +45,7 @@ const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{I
 
 export default function Solar() {
   return (
-    <div className="absolute z-20 inset-0 bg-transparent overflow-x-hidden">
+    <div className="absolute z-20 inset-0 bg-transparent overflow-hidden">
       <div className="relative w-full h-full">
         <motion.div
           className="absolute rounded-full z-25"

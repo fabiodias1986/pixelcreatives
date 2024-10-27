@@ -20,7 +20,9 @@ const Footer = () => {
   return (
     <div className="relative font-light grid grid-cols-1 md:grid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
       <div className="text-lg flex-col text-normal h-full w-fit justify-center md:justify-start items-center p-8">
+        <div className="mt-2 flex items-center justify-center md:justify-start ">
         <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className=" h-fit w-auto object-cover" />
+        </div>
         <p className="mt-4 flex items-center justify-center md:justify-start">
           <FaEnvelope className="mr-2" />
           <a href="mailto:pixelcreatives.pt@gmail.com" className="hover:text-secundary transition-colors duration-200">
