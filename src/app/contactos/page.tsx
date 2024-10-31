@@ -32,7 +32,7 @@ export default function ContactsPage() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-6 w-6 text-primary" aria-hidden="true" />
-                <a href="mailto:pixelcreatives@gmail.com" className="text-lg hover:underline">pixelcreatives@gmail.com</a>
+                <a href="mailto:pixelcreatives.pt@gmail.com" className="text-lg hover:underline">pixelcreatives.pt@gmail.com</a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-6 w-6 text-primary mt-1" aria-hidden="true" />

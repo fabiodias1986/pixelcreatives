@@ -94,14 +94,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
     <Head>
-          
-      <Script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TCW6GLCH');</Script>
-      
-    
+
       <meta name="yandex-verification" content="6015463b94fe0d61" />
       <link rel="icon" href="@/favicon180.png" sizes="any" />
       <link rel="icon" href="@/favicon32.png" sizes="32x32" type="image/png" />
@@ -122,9 +115,6 @@ export default function RootLayout({
         `}
       </Script>
       <body className={poppins.className}>
-      
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCW6GLCH"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         <div className=" bg-gradient-to-r from-main to-main">
         < Nav />
