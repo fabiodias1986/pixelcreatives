@@ -36,7 +36,8 @@ export default function AboutUs() {
           </div>
           <div className="flex flex-col py-8 lg:py-0 text-justify ">
             <p className=" text-main first-line:mb-6 ">
-            A Pixel Creatives é uma agência de <strong>Marketing Digital</strong>, <strong>Branding</strong> e <strong>Webdesign</strong> sediada em Loulé, no coração do Algarve. Fundada com a visão de transformar o panorama digital das empresas portuguesas, a nossa agência tem-se destacado pela excelência dos seus serviços e pela abordagem inovadora que traz a cada projeto.
+            A Pixel Creatives é uma agência inovadora de <strong>Branding</strong>, <strong>Webdesign</strong>  e <strong>Marketing Digital</strong> dedicada a transformar a presença online dos seus clientes através de soluções criativas e estratégicas. Com uma equipa de profissionais altamente qualificados, combinamos expertise técnica com visão artística para criar experiências digitais impactantes e eficazes.
+
             </p>
             <h2 className="text-2xl font-semibold tracking-tight my-4">A Nossa Essência</h2>
             <p className=" text-main mb-2">

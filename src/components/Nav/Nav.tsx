@@ -54,7 +54,7 @@ const Nav = () => {
       >
         <div className="px-4 md:w-1/3 w-full">
         <Link href="/">
-          <Image src="/assets/logos/logo-white.png" alt="Logo" className="h-fit w-auto object-cover object-center" width={300} height={100} />
+          <Image src="/assets/logos/logo-white.png" onClick={() => setIsOpen(false)} alt="Logo" className="h-fit w-auto object-cover object-center" width={300} height={100} />
         </Link>
         </div>
 
