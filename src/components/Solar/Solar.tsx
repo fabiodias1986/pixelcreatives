@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGoogle } from 'react-icons/fa';
+import {FaXTwitter} from 'react-icons/fa6'
 
 const SocialIconWithOrbit = ({ Icon, size, orbitRadius, speed, reverseOrbit }:{Icon: React.ElementType, size:number, orbitRadius:number, speed:number, reverseOrbit?: boolean}) => {
   return (
@@ -69,7 +70,7 @@ export default function Solar() {
           }}
         />
         <SocialIconWithOrbit Icon={FaFacebook} size={16} orbitRadius={100} speed={2} />
-        <SocialIconWithOrbit Icon={FaTwitter} size={14} orbitRadius={150} speed={2.5} reverseOrbit={true} />
+        <SocialIconWithOrbit Icon={FaXTwitter} size={14} orbitRadius={150} speed={2.5} reverseOrbit={true} />
         <SocialIconWithOrbit Icon={FaInstagram} size={16} orbitRadius={250} speed={1} />
         <SocialIconWithOrbit Icon={FaLinkedin} size={15} orbitRadius={320} speed={3} reverseOrbit={true} />
         <SocialIconWithOrbit Icon={FaGoogle} size={18} orbitRadius={400} speed={4} />
