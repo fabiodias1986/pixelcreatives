@@ -35,7 +35,7 @@ type ImageProps = {
                 initial={{ opacity: 0, y:50 }}
                 whileInView={{opacity:1, y:0}}
                 transition={{duration:0.5}}
-              className="mb-6 lg:mb-0 md:text-xl md:tracking-wide font-normal text-justify text-white">{children}</motion.div>
+              className="mb-6 lg:mb-0 md:text-lg md:tracking-wide font-normal text-justify text-white">{children}</motion.div>
             </div>
             <div className="flex  justify-center ">
               <motion.img 

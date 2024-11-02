@@ -47,14 +47,14 @@ function ServiceCard({ title, description }: ServiceCardProps) {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-      className="bg-white rounded-lg border-2 border-solid border-secundary shadow-secundary shadow-sm overflow-hidden transition-shadow duration-300 ease-in-out"
+      className="bg-white rounded-lg border-2 border-solid border-white shadow-sm overflow-hidden transition-shadow duration-300 ease-in-out"
     >
       <div className="flex flex-col justify-center items-center min-h-[200px] lg:min-h-[300px] p-6">
         <div className="text-center flex flex-col justify-center items-start">
           <h3 className="mb-2 w-full text-3xl md:text-3xl lg:text-4xl font-semibold text-main">
             {title}
           </h3>
-          <p className="w-full text-gray-800">{description}</p>
+          <p className="w-full text-gray-900">{description}</p>
         </div>
       </div>
     </motion.div>

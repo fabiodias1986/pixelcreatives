@@ -19,7 +19,7 @@ const socialMediaLinks = [
 const Footer = () => {
   return (
     <div className="relative font-light grid grid-cols-1 lg:grid-cols-3 justify-center place-items-center pt-8 bg-main text-white">
-      <div className=" md:text-lg flex-col text-normal h-full w-fit justify-center lg:justify-start items-center p-8">
+      <div className=" flex-col text-normal h-full w-fit justify-center lg:justify-start items-center p-8">
         <div className=" mt-2 flex items-center justify-center lg:justify-start ">
         <Image src="/assets/logos/logo-white.png" alt="Logo" width={300} height={100} className=" h-fit w-auto object-contain" />
         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       <div className="grid-cols-1 text-normal h-full place-items-center p-8">
         <h3 className="w-full mb-4 text-xl font-semibold text-left">Menu</h3>
-        <ul className="grid gap-y-2 text-left text-lg w-fit">
+        <ul className="grid gap-y-2 text-left text-normal w-fit">
           {menuItems.map(({ name, href, icon }) => (
             <li key={name} className="flex items-center">
               <a href={href} className="flex items-center hover:text-secundary transition-colors duration-200 cursor-pointer">
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className=" flex-col text-normal font-light place-items-center p-8">
         <h3 className="w-full mb-4 text-xl font-semibold text-left">Siga-nos</h3>
-        <ul className="text-lg grid gap-y-2 w-fit place-items-start">
+        <ul className="text-normal grid gap-y-2 w-fit place-items-start">
           {socialMediaLinks.map(({ name, href, icon }) => (
             <li key={name} className="flex items-center">
               <a 

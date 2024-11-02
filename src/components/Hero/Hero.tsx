@@ -29,7 +29,7 @@ export const Hero = (props: HeaderProps) => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen w-full">
       <div className="flex flex-col items-start justify-center w-full h-full"> 
-        <motion.div className="h-auto z-[8] flex flex-col justify-center items-start p-6 md:p-16 bg-blue-400">
+        <motion.div className="h-auto z-[8] flex flex-col justify-center items-start p-6 md:p-16 ">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export const Hero = (props: HeaderProps) => {
             className="relative text-left text-white mb-2 md:mb-6 tracking-tight leading-tight text-5xl md:text-6xl lg:text-7xl font-bold lg:font-bold lg:tracking-wide drop-shadow-lg lg:leading-tight"
           >
             <h1>{heading}</h1>
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-tr from-secundary to-secundary py-2">{heading1}</h1>
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-tr from-secundary to-secundary">{heading1}</h1>
             <h1>{heading2}</h1>
           </motion.div>
           <motion.p
