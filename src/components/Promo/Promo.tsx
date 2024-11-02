@@ -14,15 +14,20 @@ export default function Promo({
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true)
-    }, 5000)
+    const hasShownPromo = localStorage.getItem('hasShownPromo');
 
-    return () => clearTimeout(timer)
-  }, [])
+    if (!hasShownPromo) {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+        localStorage.setItem('hasShownPromo', 'true'); // Marcar que a promoção foi exibida
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const handleClose = () => {
-    setIsVisible(false)
+    setIsVisible(false);
   }
 
   return (
@@ -36,6 +41,7 @@ export default function Promo({
           className="fixed inset-0 flex items-center justify-center z-50"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
+          <div className="absolute inset-0 bg-black opacity-50" /> {/* Div transparente abaixo da imagem */}
           <div className="relative w-4/5 max-w-lg aspect-square">
             <button
               onClick={handleClose}
@@ -44,7 +50,7 @@ export default function Promo({
             >
               <X size={24} />
             </button>
-            <Link href={linkUrl}  rel="noopener noreferrer">
+            <Link href={linkUrl} rel="noopener noreferrer">
               <div className="relative w-full h-full">
                 <Image
                   src={imageUrl}
