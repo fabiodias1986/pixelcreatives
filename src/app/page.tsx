@@ -12,13 +12,14 @@ import { Faq } from "@/components/Faq/Faq";
 import { Contact } from "@/components/Contact/Contact";
 import LoadingSpinner from "@/components/loading/Loading";
 import { Suspense } from "react";
-
+import Promo from "@/components/Promo/Promo"
 const Home = () => {
 
 
   return (
     
-    <>      
+    <>    
+    <Promo />  
         <Hero />
 
         <Intro />

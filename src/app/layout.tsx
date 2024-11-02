@@ -8,7 +8,7 @@ import Head from "next/head";
 import { Suspense } from "react";
 import LoadingSpinner from '@/components/loading/Loading'
 import Script from 'next/script'
-
+import Promo from "@/components/Promo/Promo"
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -119,6 +119,7 @@ export default function RootLayout({
         <div className=" bg-gradient-to-r from-main to-main">
         < Nav />
         <Suspense  fallback={<LoadingSpinner />}>
+        
         {children}
         </Suspense>
         < Footer />
