@@ -29,7 +29,7 @@ export const Hero = (props: HeaderProps) => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen w-full">
       <div className="flex flex-col items-start justify-center w-full h-full"> 
-        <motion.div className="h-auto z-[8] flex flex-col justify-center items-start p-6 md:p-16">
+        <motion.div className="h-auto z-[8] flex flex-col justify-center items-start p-6 md:p-16 bg-blue-400">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
