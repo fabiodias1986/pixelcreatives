@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function Links() {
   return (
    
-      <div className="bg-white w-screen min-h-screen md:w-auto md:h-auto rounded-lg shadow-xl max-w-6xl justify-center flex flex-col items-center px-8 py-8 ">
+      <div className="bg-white w-screen h-screen md:w-auto md:h-auto rounded-lg shadow-xl max-w-6xl justify-center flex flex-col md:flex-row lg:flex-col items-center px-8 py-8 ">
+        <div className="w-full flex flex-col justify-center items-center">
         <div className="w-[150px] h-[150px]  p-2 bg-white overflow-hidden rounded-full flex items-center justify-center mb-6">
-          <Image src="/assets/logos/logo.png" alt="Logo Pixel Creatives" className="object-cover" width={"1000"} height={"1000"} />
-        </div>
-        
+          <Image src="/assets/logos/logo.png" alt="Logo Pixel Creatives" className="object-cover " width={"1000"} height={"1000"} />
+        </div>   
         <h1 className="text-main text-xl  font-semibold mb-1">pixelcreatives.pt</h1>
-        <p className="text-main text-sm mb-6 text-center">
+        <p className="text-main text-sm mb-6 text-center md:text-left lg:text-center">
           Onde cada pixel conta uma história!
         </p>
 
@@ -28,7 +28,7 @@ export default function Links() {
             <FaLinkedinIn className="w-5 h-5 sm:w-6 sm:h-6" />
           </Link>
         </div>
-
+        </div>
         <div className="w-full max-w-md space-y-4">
           <Button
             variant="outline"
