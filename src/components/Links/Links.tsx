@@ -51,7 +51,7 @@ export default function Links() {
             className="w-full h-10 sm:h-12 text-base sm:text-lg bg-black hover:bg-white hover:text-black text-white hover:border-main transition-colors duration-200"
             asChild
           >
-            <Link href="https://wa.me/message/Z6DK62YFL3IKH1">Whatsapp</Link>
+            <Link target="_blank" href="https://wa.me/message/Z6DK62YFL3IKH1">Whatsapp</Link>
           </Button>
         </div>
        
