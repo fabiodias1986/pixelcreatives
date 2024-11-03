@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
@@ -24,6 +22,18 @@ export default function Promo({
 
       return () => clearTimeout(timer);
     }
+
+    // Função para remover o item do localStorage ao sair do site
+    const handleBeforeUnload = () => {
+      localStorage.removeItem('hasShownPromo');
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Cleanup ao desmontar o componente
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
   }, []);
 
   const handleClose = () => {
@@ -41,14 +51,15 @@ export default function Promo({
           className="fixed inset-0 flex items-center justify-center z-50"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
-          <div className="absolute inset-0 bg-black opacity-50" /> {/* Div transparente abaixo da imagem */}
+          <div className="absolute inset-0 bg-black opacity-50" />
           <div className="relative w-4/5 max-w-lg aspect-square">
             <button
               onClick={handleClose}
-              className="absolute -top-4 -right-4 bg-white text-black rounded-full p-1 hover:bg-gray-200 transition-colors z-10"
+              className="absolute -top-4 -right-4 bg-white text-black rounded-full p-1 cursor-pointer transition-colors z-[9999999999]"
               aria-label="Close overlay"
+              
             >
-              <X size={24} />
+              <X size={24} className='cursor-pointer'/>
             </button>
             <Link href={linkUrl} rel="noopener noreferrer">
               <div className="relative w-full h-full">

@@ -89,7 +89,7 @@ export default function Gallery() {
               >
                 <motion.img 
                   src={image.src} 
-                  alt={`Image ${(index % images.length) + 1}`}
+                  alt={`Post ${(index % images.length) + 1}`}
                   className="border-2 border-solid border-green2 w-full h-full object-cover rounded-lg shadow-lg"
                   whileHover={{
                     boxShadow: "0px 0px 8px rgb(255,255,255)"
