@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Links() {
   return (
    
-      <div className="bg-white rounded-lg shadow-xl max-w-6xl justify-center flex flex-col items-center px-8 py-8 sm:py-12">
+      <div className="bg-white w-screen h-screen md:w-auto md:h-auto rounded-lg shadow-xl max-w-6xl justify-center flex flex-col items-center px-8 py-8 sm:py-12">
         <div className="w-[150px] h-[150px]  p-2 bg-white overflow-hidden rounded-full flex items-center justify-center mb-6">
           <Image src="/assets/logos/logo.png" alt="Logo Pixel Creatives" className="object-cover" width={"1000"} height={"1000"} />
         </div>
