@@ -52,10 +52,10 @@ export default function Promo({
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
           <div className="absolute inset-0 bg-black opacity-50" />
-          <div className="relative w-4/5 max-w-lg aspect-square">
+          <div className="relative w-4/5 max-w-lg aspect-square lg:mt-[90px]">
             <button
               onClick={handleClose}
-              className="absolute -top-4 -right-4 bg-white text-black rounded-full p-1 cursor-pointer transition-colors z-[9999999999]"
+              className="absolute top-4 right-4 bg-white text-black rounded-full p-1 cursor-pointer transition-colors z-[9999999999]"
               aria-label="Close overlay"
               
             >
