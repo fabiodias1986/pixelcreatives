@@ -11,7 +11,7 @@ export default function CTAButton() {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="relative z-10">Pedir Proposta</span>
+      <span className="relative z-10">Solicitar Proposta</span>
       <motion.div
         className="absolute inset-0 bg-white opacity-20"
         initial={{ scale: 0, opacity: 0.2 }}
